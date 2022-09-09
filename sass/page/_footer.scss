@@ -5,13 +5,196 @@
     margin-top: auto;
 
     .copyright {
-        padding: 14px 0;
+        padding: 47px 0 46px;
         text-align: center;
-        color: #92d4e1;
-        background: #004870;
-        font-size: 11px;
-        letter-spacing: 0.005em;
+        color: #fff;
+        background: $main-cl;
+        font-size: 12px;
+        font-family: $roboto;
+        letter-spacing: 1.1px;
     }
 }
 
+.footer-mid {
+    background-color: #fff;
+    padding: 91px 0 97px;
 
+    .fm-wrapper {
+        display: flex;
+    }
+
+    .fm-logo {
+        display: block;
+        margin-bottom: 8px;
+        text-align: center;
+        transition: all 0.3s ease;
+        &:hover {
+            opacity: 0.8;
+        }
+        img {
+            height: auto;
+        }
+    }
+
+    .fm-txt {
+        width: 260px;
+        flex-shrink: 0;
+    }
+
+    .fm-tx {
+        font-weight: bold;
+        padding: 5px 10px;
+        border: 1px solid #eaeaea;
+        border-radius: 3px;
+        width: 205px;
+        height: 50px;
+        margin: 0 auto 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 2px;
+        line-height: 1.1;
+        text-align: center;
+    }
+
+    .fm-tell {
+        text-align: left;
+        margin-bottom: 25px;
+        display: inline-block;
+        .fm-tell-tt {
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .fm-tell-lk {
+            color: $main-cl;
+            font-weight: bold;
+            font-size: 35px;
+            font-family: $roboto;
+            position: relative;
+            line-height: 1;
+            letter-spacing: -0.2px;
+            margin-bottom: 4px;
+            display: block;
+            &::before {
+                content: "";
+                // position: absolute;
+                // top: 0%;
+                // left: 0;
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                background: url("../images/ic-tell.png") center no-repeat;
+                background-size: contain;
+                width: 21px;
+                height: 21px;
+            }
+        }
+
+        .fm-tell-time {
+            font-size: 14px;
+            letter-spacing: 1.5px;
+        }
+    }
+
+    .fm-contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 40px;
+        background-color: $main-cl3;
+        color: #fff;
+        transition: all 0.3s ease;
+        width: 260px;
+        height: 80px;
+        margin: 0 auto;
+        &:hover {
+            background-color: $main-cl;
+        }
+        span {
+            display: block;
+            font-weight: bold;
+        }
+        .fm-bz {
+            font-size: 22px;
+            transform: translate(0, -3px);
+            letter-spacing: 1px;
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 17px;
+                height: 14px;
+                background: url("../images/ic-email.png") center no-repeat;
+                background-size: contain;
+                margin-right: 7px;
+            }
+        }
+    }
+
+    .fm-menu {
+        width: 100%;
+        padding-left: 82px;
+        display: flex;
+        justify-content: space-between;
+        a{
+            &:hover{
+                color: $main-cl;
+            }
+        }
+        
+    }
+
+    .fm-col{
+        padding-left: 25px;
+        
+    }
+
+    .fm-list{
+        > li{
+            margin-bottom: 50px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .fm-ar {
+        position: relative;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+
+    .fm-r {
+        position: absolute;
+        top: 5px;
+        left: -9px;
+        transform: translateX(-100%) ;
+        width: 16px;
+        height: 16px;
+        background-color: $main-cl;
+        border-radius: 100%;
+        &::before{
+            content: '';
+            width: 4px;
+            height: 4px;
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            transform: translate(-50% , -50%) rotate(-45deg);
+            border: 0px solid #fff;
+            border-width: 0 1px 1px 0;
+        }
+    }
+
+    .fm-lst{
+        margin-top: 10px;
+        li{
+            margin-bottom: 14px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

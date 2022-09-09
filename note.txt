@@ -1,0 +1,84 @@
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXVGLV5SLQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XXVGLV5SLQ');
+</script>
+
+
+code này , như dưới này dán trong  <head>, cố gắn để phía trên
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TWG5DRC');</script>
+<!-- End Google Tag Manager -->
+
+
+※và dán code dưới này ngay sau  <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TWG5DRC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+set cấu trúc hóa 
+page set ：TOP＋会社概要 ( page 16 about/company.html)
+tham khảo：https://www.suzuki-or.com/
+※chỗ 「"image"」 hãy change thành code của logo đã set 
+<head>
+    <script type="application/ld+json">
+        {
+            "@context" : "https://schema.org/",
+            "@type" : "LocalBusiness",
+            "name" : "株式会社三央",
+            "image" : "https://www.san-oh-research.jp/images/logo_img01.jpg",
+            "telephone" : "	03-3659-8657",
+            "address" : {
+            "@type" : "PostalAddress",
+            "streetAddress" : "北小岩3-1-24",
+            "addressLocality" : "江戸川区",
+            "addressRegion" : "東京都",
+            "postalCode" : "133-0051"
+            },
+            "openingHoursSpecification": [
+            {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "9:00",
+            "closes": "19:00"
+            }
+        ]
+            }
+        }
+    </script>
+</head>
+
+
+ví dụ ：trường hợp tag tel
+onclick="gtag('event', 'contact', {'event_category': 'sp'});
+onclick="gtag('event', 'tel', {'event_category': 'sp'});"
+
+
+set markup cấu trúc hóa
++ breadcrumbs
++ how-to
++ QA
++ page TOP
+
+
+「loading="lazy"」 thì ko add vào firstview
+
+
+set favicon
+
+
+alt của logo hãy hình main , hãy insert （tên công ty）＋（tên vùng）
+tham khảo ：http://www.kuboshika-clinic.com/
+
+
+set breadcrumb

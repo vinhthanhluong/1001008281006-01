@@ -67,5 +67,13 @@
     opacity: 0;
   }
 }
+@keyframes circle {
+  0% {
+    stroke-dashoffset: 360%;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
 
 /*# sourceMappingURL=animation.css.map */

@@ -3,11 +3,14 @@ $(function () {
     console.log('( •ิཬ•ั ) Hello!!!');
     function anchorLink(el) {
         var p = $(el).offset();
-        var offsetPC = 0;
-        var offsetSP = 0;
+        var offsetPC = 150;
+        var offsetTab = 120;
+        var offsetSP = 100;
         if ($(window).width() > 750) {
             $('html,body').animate({ scrollTop: p.top - offsetPC }, 400);
-        } else {
+        }else if(750 < $(window).width() <= 1439) {
+            $('html,body').animate({ scrollTop: p.top - offsetTab }, 400);
+        }else{
             $('html,body').animate({ scrollTop: p.top - offsetSP }, 400);
         }
     }
