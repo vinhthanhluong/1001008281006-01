@@ -79,12 +79,7 @@
             display: block;
             &::before {
                 content: "";
-                // position: absolute;
-                // top: 0%;
-                // left: 0;
                 display: inline-block;
-                width: 30px;
-                height: 30px;
                 background: url("../images/ic-tell.png") center no-repeat;
                 background-size: contain;
                 width: 21px;

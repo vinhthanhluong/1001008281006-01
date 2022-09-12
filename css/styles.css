@@ -842,6 +842,9 @@ img {
   transform: translateY(7px);
   display: flex;
 }
+#header .logo a:hover {
+  opacity: 0.8;
+}
 #header .logo img {
   height: auto;
 }
@@ -1000,8 +1003,6 @@ img {
 .footer-mid .fm-tell .fm-tell-lk::before {
   content: "";
   display: inline-block;
-  width: 30px;
-  height: 30px;
   background: url("../images/ic-tell.png") center no-repeat;
   background-size: contain;
   width: 21px;
@@ -1139,7 +1140,7 @@ img {
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-  background-position: -133px 159px;
+  background-position: -130px 159px;
 }
 .index-visual .vis-txt {
   display: flex;
@@ -1468,8 +1469,10 @@ img {
 .sterength .stere-bm .fz-sm {
   font-size: 85.7142%;
 }
-.sterength .stere-ig {
+.sterength .stere-g {
   width: calc(100% - 303px);
+}
+.sterength .stere-ig {
   padding: 80px 10px 60px 147px;
   background: url("../images/stere-img01.png") right 18px no-repeat;
 }
@@ -1508,6 +1511,10 @@ img {
   line-height: 2;
   letter-spacing: 0.6px;
   padding: 0 7px 0 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .sterength .stere-act {
   display: flex;
@@ -1888,6 +1895,7 @@ img {
 .contacts .contacts-tel {
   width: 400px;
   height: 110px;
+  max-width: 100%;
   border-radius: 55px;
   background-color: #2fa2de;
   display: flex;
@@ -1927,6 +1935,7 @@ img {
 .contacts .contacts-email {
   width: 400px;
   height: 110px;
+  max-width: 100%;
   border-radius: 55px;
   font-weight: bold;
   background-color: #0364b9;
@@ -2020,7 +2029,7 @@ img {
 .trouble .trouble-list li {
   margin: 0 30px;
 }
-.trouble .trouble-list .trouble-item {
+.trouble .trouble-item {
   width: 320px;
   height: 320px;
   border-radius: 100%;
@@ -2095,6 +2104,8 @@ img {
 .endoscope .scope-content {
   display: flex;
   width: 100vw;
+  max-width: 1920px;
+  min-width: 1280px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -2143,18 +2154,18 @@ img {
 }
 .endoscope .scope-ltm {
   background: #f1f1f1 url("../images/scope-img01.png") bottom right no-repeat;
-  padding-left: calc((100vw - 1500px) / 2);
+  padding-left: 210px;
 }
 .endoscope .scope-ltm::before {
   content: "before";
   top: 14px;
-  left: -6px;
+  left: -18px;
   color: rgba(255, 255, 255, 0.6);
 }
 .endoscope .scope-rtm {
   width: 50%;
   background: #2fa2de url("../images/scope-img02.png") bottom right no-repeat;
-  padding-right: calc((100vw - 1429px) / 2);
+  padding-right: 245.5px;
   justify-content: flex-end;
   color: #fff;
 }
@@ -2285,7 +2296,9 @@ img {
 }
 .report .report-box {
   display: flex;
-  width: 1920px;
+  width: 100vw;
+  min-width: 1280px;
+  max-width: 1920px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -2296,6 +2309,15 @@ img {
 }
 .report .report-box:hover {
   opacity: 0.8;
+}
+.report .report-box .report-i {
+  height: 100%;
+}
+.report .report-box .report-i img {
+  height: 100%;
+}
+.report .report-box .report-img img {
+  height: auto;
 }
 .report .report-txt {
   position: absolute;
@@ -2518,13 +2540,13 @@ img {
   color: #fff;
   font-weight: bold;
 }
-.catalog-index .cate-jp {
+.catalog-index .cata-jp {
   font-size: 30px;
   letter-spacing: 6px;
   margin-bottom: 6px;
   white-space: nowrap;
 }
-.catalog-index .cate-en {
+.catalog-index .cata-en {
   font-size: 14px;
   letter-spacing: 3px;
   font-family: "Roboto", sans-serif;
@@ -2535,8 +2557,7 @@ img {
   top: 45%;
   right: 0;
   z-index: 10;
-  opacity: 0;
-  visibility: hidden;
+  transition: all 0.3s ease;
 }
 .btns-fix li {
   text-align: center;
