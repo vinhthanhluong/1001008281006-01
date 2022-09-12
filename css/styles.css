@@ -784,12 +784,11 @@ img {
 }
 
 #topic-path {
-  padding: 15px 0;
+  padding: 26px 0;
 }
 #topic-path .topic-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 #topic-path li, #topic-path a {
   font-size: 14px;
@@ -801,6 +800,11 @@ img {
   content: ">";
   display: inline-block;
   padding: 0 4px;
+}
+#topic-path li:first-child a {
+  color: #2fa2de;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 #topic-path li:last-child::after {
   display: none;
@@ -1218,7 +1222,7 @@ img {
 .index-visual .vis-ft a::before {
   content: "";
   display: inline-block;
-  background: url("../../images/ic-sef.png") center no-repeat;
+  background: url("../images/ic-sef.png") center no-repeat;
   background-size: contain;
   width: 20px;
   height: 26px;
@@ -1309,6 +1313,12 @@ img {
   line-height: 2;
   letter-spacing: 1.6px;
   margin-bottom: 32px;
+}
+.drainage-pipe .pipe-desc p {
+  margin-bottom: 10px;
+}
+.drainage-pipe .pipe-desc p:last-child {
+  margin-bottom: 0;
 }
 .drainage-pipe .pipe-btn {
   display: flex;
@@ -1516,6 +1526,12 @@ img {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.sterength .stere-desc p {
+  margin-bottom: 10px;
+}
+.sterength .stere-desc p:last-child {
+  margin-bottom: 0;
+}
 .sterength .stere-act {
   display: flex;
   align-items: center;
@@ -1621,11 +1637,12 @@ img {
   position: absolute;
   top: 0%;
   right: 0;
-  width: 49.5%;
+  width: 50%;
   height: 100%;
   background-image: url("../images/greetings-img02.jpg");
   background-repeat: no-repeat;
   background-position: right;
+  background-size: cover;
   z-index: -1;
   clip-path: polygon(17.9% 0, 100% 0%, 100% 100%, 0% 100%);
 }
@@ -1678,6 +1695,12 @@ img {
   letter-spacing: 1.6px;
   padding-right: 55px;
 }
+.greeting .greet-desc p {
+  margin-bottom: 10px;
+}
+.greeting .greet-desc p:last-child {
+  margin-bottom: 0;
+}
 .greeting .greet-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -1694,6 +1717,10 @@ img {
   position: absolute;
   top: -50px;
   left: -53px;
+  bottom: 0;
+}
+.greeting .greet-img img {
+  height: 100%;
 }
 .greeting .greet-btn {
   position: absolute;
@@ -2151,6 +2178,12 @@ img {
   line-height: 2;
   letter-spacing: 1.7px;
   margin-bottom: 33px;
+}
+.endoscope .scope-item .scope-desc p {
+  margin-bottom: 10px;
+}
+.endoscope .scope-item .scope-desc p:last-child {
+  margin-bottom: 0;
 }
 .endoscope .scope-ltm {
   background: #f1f1f1 url("../images/scope-img01.png") bottom right no-repeat;

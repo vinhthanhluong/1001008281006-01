@@ -60,7 +60,7 @@
 .main-under #content {
   padding: 0 0 100px;
   margin: 0 auto;
-  width: 1080px;
+  width: 1200px;
 }
 
 .under-visual {
@@ -68,22 +68,34 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 420px;
-  background-color: #000;
+  height: 500px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 120px;
 }
 .under-visual h2 {
   position: relative;
   text-align: center;
-  letter-spacing: -1.5px;
   width: 100%;
   color: #fff;
   font-weight: bold;
-  font-size: 60px;
-  line-height: 1.7;
-  text-shadow: 0 0 8px #5e5e5e;
+  line-height: 1.4;
+  text-shadow: 1px 0 6px rgba(0, 0, 0, 0.15);
+}
+.under-visual span {
+  display: block;
+}
+.under-visual .h2-jp {
+  font-size: 42px;
+  margin-bottom: -6px;
+  letter-spacing: 4px;
+}
+.under-visual .h2-en {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 3px;
+  transform: translateY(14px);
 }
 
 .main-under .h3,
@@ -324,6 +336,7 @@
 .under-pickup .pu-img {
   float: left;
   margin: 50px 60px 0px 0;
+  display: none;
 }
 .under-pickup h4 {
   display: inline-block;
@@ -432,7 +445,7 @@
 }
 
 .main-under .sec-wrapper {
-  max-width: 1080px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .main-under .sech3 {

@@ -362,6 +362,12 @@
 /* end screen-min:751px && screen-max:1500px */
 
 @media screen and (min-width: 751px) and (max-width: 1280px) {
+    .drainage-pipe {
+        .pige-bxig{
+            width: 685px;
+            margin-left: -40px;
+        }
+    }
     .greeting {
         &::after {
             font-size: 148px;
@@ -773,14 +779,14 @@
             // width: 100vw;
             // height: 100vw;
             width: 120vw;
-            height: 120vw;
+            height: 110vw;
             margin-bottom: 30px;
             margin-top: -100px;
             &::before {
                 width: 100%;
                 height: 100%;
-                top: 46px;
-                left: 20px;
+                top: 0;
+                left: 0;
             }
         }
 
@@ -1493,10 +1499,11 @@
 
         .vis-box{
             margin-top: -70px;
+            height: 105vw;
         }
 
         .vis-img{
-            background-position: right 56px top;
+            background-position: right 56px top 22px;
         }
     }
 

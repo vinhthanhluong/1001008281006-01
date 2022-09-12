@@ -128,7 +128,7 @@
             &::before {
                 content: "";
                 display: inline-block;
-                background: url("../../images/ic-sef.png") center no-repeat;
+                background: url("../images/ic-sef.png") center no-repeat;
                 background-size: contain;
                 width: 20px;
                 height: 26px;
@@ -232,6 +232,12 @@
         line-height: 2;
         letter-spacing: 1.6px;
         margin-bottom: 32px;
+        p{
+            margin-bottom: 10px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
     }
 
     .pipe-btn {
@@ -465,6 +471,12 @@
         letter-spacing: 0.6px;
         padding: 0 7px 0 10px;
         @include line-clamp(5);
+        p{
+            margin-bottom: 10px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
     }
 
     .stere-act {
@@ -585,11 +597,12 @@
         position: absolute;
         top: 0%;
         right: 0;
-        width: 49.5%;
+        width: 50%;
         height: 100%;
         background-image: url("../images/greetings-img02.jpg");
         background-repeat: no-repeat;
         background-position: right;
+        background-size: cover;
         z-index: -1;
         clip-path: polygon(17.9% 0, 100% 0%, 100% 100%, 0% 100%);
     }
@@ -646,6 +659,12 @@
         line-height: 2;
         letter-spacing: 1.6px;
         padding-right: 55px;
+        p{
+            margin-bottom: 10px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
     }
 
     .greet-wrapper {
@@ -667,6 +686,10 @@
         position: absolute;
         top: -50px;
         left: -53px;
+        bottom: 0;
+        img{
+            height: 100%;
+        }
     }
 
     .greet-btn {
@@ -1176,6 +1199,12 @@
             line-height: 2;
             letter-spacing: 1.7px;
             margin-bottom: 33px;
+            p{
+                margin-bottom: 10px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
         }
     }
     .scope-ltm {

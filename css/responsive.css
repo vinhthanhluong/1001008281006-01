@@ -293,6 +293,11 @@
 }
 /* end screen-min:751px && screen-max:1500px */
 @media screen and (min-width: 751px) and (max-width: 1280px) {
+  .drainage-pipe .pige-bxig {
+    width: 685px;
+    margin-left: -40px;
+  }
+
   .greeting::after {
     font-size: 148px;
   }
@@ -633,15 +638,15 @@
     right: -50px;
     margin-left: auto;
     width: 120vw;
-    height: 120vw;
+    height: 110vw;
     margin-bottom: 30px;
     margin-top: -100px;
   }
   .index-visual .vis-box::before {
     width: 100%;
     height: 100%;
-    top: 46px;
-    left: 20px;
+    top: 0;
+    left: 0;
   }
   .index-visual .vis-img {
     background-size: 100% 100%;
@@ -1222,9 +1227,10 @@
   }
   .index-visual .vis-box {
     margin-top: -70px;
+    height: 105vw;
   }
   .index-visual .vis-img {
-    background-position: right 56px top;
+    background-position: right 56px top 22px;
   }
 
   .drainage-pipe .pipe-list a {
