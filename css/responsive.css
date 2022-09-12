@@ -164,7 +164,7 @@
     width: 55%;
   }
   .drainage-pipe .pige-bxig {
-    width: calc((100vw - 1230px) / 2 + 100%);
+    width: calc(((100vw - 1230px) / 2) + 100%);
     margin-left: calc((100vw - 1200px) / -2);
   }
   .drainage-pipe .pipe-label {
@@ -212,23 +212,23 @@
   }
 
   .endoscope .scope-ltm {
-    padding-left: 90px;
+    padding-left: calc((1680px - 1500px) / 2);
   }
   .endoscope .scope-rtm {
-    padding-right: 40px;
+    padding-right: calc((1580px - 1500px) / 2);
   }
 
   .report .rpt-bx1 .report-bf {
     font-size: 6.5vw;
   }
   .report .rpt-bx1 .report-tt {
-    margin-left: 80px;
+    margin-left: calc((1360px - 1200px) / 2);
   }
   .report .rpt-bx2 .report-bf {
     font-size: 7vw;
   }
   .report .rpt-bx2 .report-tt {
-    margin-right: 80px;
+    margin-right: calc((1360px - 1200px) / 2);
   }
 }
 @media screen and (min-width: 751px) and (max-width: 1439px) {

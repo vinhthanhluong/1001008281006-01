@@ -1,6 +1,6 @@
 #topic-path {
     padding: 26px 0;
-    // background: #fff;
+    padding-left: 3px;
 
     .topic-list {
         display: flex;
@@ -8,22 +8,24 @@
     }
 
     li , a{
-        font-size: 14px;
+        font-size: 15px;
+        letter-spacing: 1.4px;
     }
 
     li{
         position: relative;
         &::after{
-            content: '>';
+            content: '＞';
             display: inline-block;     
-            padding: 0 4px;       
+            padding: 0 17px;       
         }
 
         &:first-child{
             a{
                 color: $main-cl;
                 text-transform: uppercase;
-                letter-spacing: 1px;
+                border-bottom: 1px solid $main-cl;
+                padding-bottom: 5px;
             }
         }
 
@@ -36,7 +38,7 @@
 
     a { 
         &:hover{
-            color: $main-cl;
+            color: $main-cl3 !important;
         }
     }
 }

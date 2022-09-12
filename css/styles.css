@@ -785,32 +785,35 @@ img {
 
 #topic-path {
   padding: 26px 0;
+  padding-left: 3px;
 }
 #topic-path .topic-list {
   display: flex;
   flex-wrap: wrap;
 }
 #topic-path li, #topic-path a {
-  font-size: 14px;
+  font-size: 15px;
+  letter-spacing: 1.4px;
 }
 #topic-path li {
   position: relative;
 }
 #topic-path li::after {
-  content: ">";
+  content: "＞";
   display: inline-block;
-  padding: 0 4px;
+  padding: 0 17px;
 }
 #topic-path li:first-child a {
   color: #2fa2de;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  border-bottom: 1px solid #2fa2de;
+  padding-bottom: 5px;
 }
 #topic-path li:last-child::after {
   display: none;
 }
 #topic-path a:hover {
-  color: #2fa2de;
+  color: #0364b9 !important;
 }
 
 .main-cl {
@@ -1248,8 +1251,8 @@ img {
 }
 .drainage-pipe .pige-bxig {
   display: flex;
-  width: calc(210px + 100%);
-  margin-left: -210px;
+  width: calc(((1920px - 1500px) / 2) + 100%);
+  margin-left: calc((1920px - 1500px) / -2);
   column-gap: 10px;
 }
 .drainage-pipe .pipe-img {
@@ -1813,8 +1816,8 @@ img {
   width: 50%;
 }
 .professional .profess-img {
-  margin-left: -360px;
-  width: calc(360px + 100%);
+  margin-left: calc((1920px - 1200px) / -2);
+  width: calc((1920px - 1200px) / 2 + 100%);
   clip-path: polygon(0 0, 100% 0%, 85.2% 100%, 0% 100%);
 }
 .professional .profess-list {
@@ -1827,7 +1830,7 @@ img {
   z-index: 1;
 }
 .professional .profess-list li {
-  width: 33.3333333333%;
+  width: calc(100% / 3);
   text-align: center;
   border-right: 1px solid #ebebeb;
   padding-bottom: 20px;
@@ -2187,7 +2190,7 @@ img {
 }
 .endoscope .scope-ltm {
   background: #f1f1f1 url("../images/scope-img01.png") bottom right no-repeat;
-  padding-left: 210px;
+  padding-left: calc((1920px - 1500px) / 2);
 }
 .endoscope .scope-ltm::before {
   content: "before";
@@ -2198,7 +2201,7 @@ img {
 .endoscope .scope-rtm {
   width: 50%;
   background: #2fa2de url("../images/scope-img02.png") bottom right no-repeat;
-  padding-right: 245.5px;
+  padding-right: calc((1920px - 1429px) / 2);
   justify-content: flex-end;
   color: #fff;
 }
@@ -2407,7 +2410,7 @@ img {
   left: 0;
 }
 .report .rpt-bx1 .report-tt {
-  margin-left: 350px;
+  margin-left: calc((1900px - 1200px) / 2);
   letter-spacing: 3.5px;
   width: 520px;
 }
@@ -2433,7 +2436,7 @@ img {
   right: 0;
 }
 .report .rpt-bx2 .report-tt {
-  margin-right: 350px;
+  margin-right: calc((1900px - 1200px) / 2);
   margin-left: auto;
   letter-spacing: 3px;
   width: 490px;
