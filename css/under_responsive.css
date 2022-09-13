@@ -19,6 +19,12 @@
   .under-tbl tr:not(:first-child) th {
     border-top: none;
   }
+  .under-tbl th {
+    padding: 15px;
+  }
+  .under-tbl td {
+    padding: 15px;
+  }
 
   .tbl-block {
     display: block;
@@ -40,20 +46,167 @@
   .tbl-scroll {
     overflow: auto;
   }
-
   .tbl-scroll table {
-    min-width: 640px;
+    min-width: 720px;
+  }
+  .tbl-scroll table.tbl-price {
+    min-width: 1200px;
+  }
+
+  .under-frame {
+    padding: 30px 20px;
+  }
+
+  .under-list.lst-num li {
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+  .under-list.lst-num li::after {
+    top: 2px;
+  }
+
+  .under-pickup {
+    min-width: 100%;
+    padding: 40px 0;
+  }
+  .under-pickup .pu-wrapper {
+    padding: 0 15px;
+  }
+  .under-pickup h4 {
+    padding: 34px 0;
+  }
+  .under-pickup .pu-en {
+    font-size: 130px;
+  }
+  .under-pickup .pu-jp {
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+
+  .under-banner {
+    padding: 20px;
+  }
+  .under-banner::before {
+    top: 7px;
+    left: 7px;
+    width: 30px;
+    height: 30px;
+    border-width: 3px 0 0 3px;
+  }
+  .under-banner::after {
+    right: 7px;
+    bottom: 7px;
+    width: 30px;
+    height: 30px;
+    border-width: 0 3px 3px 0;
+  }
+  .under-banner .ubanner-tt {
+    font-size: 18px;
+  }
+
+  .under-clm {
+    flex-wrap: wrap;
+  }
+  .under-clm dl {
+    width: 100% !important;
+  }
+  .under-clm dl:nth-child(1n+2) {
+    border-left: 1px solid #cccccc;
+    border-top: none;
+  }
+  .under-clm dd {
+    padding: 10px;
+  }
+
+  .under-lkbaner .under-lkbn {
+    padding: 20px 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  .under-lkbaner.col2 .under-lkbn {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .under-lkbaner.col2 .under-lkbn:last-child {
+    margin-bottom: 0;
+  }
+
+  .under-anc li {
+    margin-bottom: 15px;
+  }
+  .under-anc a {
+    letter-spacing: 1px;
+  }
+
+  .under-stp2 {
+    padding: 20px;
+  }
+  .under-stp2 dl {
+    margin-bottom: 15px;
+  }
+  .under-stp2 dt {
+    margin-bottom: 5px;
+  }
+  .under-stp2 .step-tt {
+    line-height: 1.4;
+    font-size: 18px;
+    padding-left: 16px;
+  }
+  .under-stp2 .step-tt::before {
+    top: 11px;
+    width: 6px;
+    height: 6px;
+  }
+
+  .under-bd dl {
+    padding: 20px;
+  }
+
+  .under-pdf li {
+    width: calc(50% - 30px);
+  }
+  .under-pdf a {
+    background-position: left 3px;
+    padding-left: 20px;
   }
 
   .main-under #content {
     padding: 30px 15px 50px;
     width: 100%;
   }
+  .main-under section, .main-under .section {
+    margin-bottom: 50px;
+  }
   .main-under .sech3 {
     width: 100%;
     min-width: 100%;
     position: static;
     transform: none;
+    margin: 20px 0 50px;
+  }
+  .main-under .sech3 .under-bx {
+    margin-bottom: 30px;
+  }
+  .main-under .sec-h h4 {
+    margin-bottom: 20px;
+  }
+  .main-under .sec-h .h5 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eaeaea;
+    display: block;
+    width: 100%;
+  }
+  .main-under .sec-h .h5::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    width: 60px;
+    height: 1px;
+    background-color: #2fa2de;
+  }
+  .main-under .sec-h .btn {
+    margin-top: 20px;
   }
 
   .main-under p,
@@ -66,21 +219,121 @@
 .main-under dl {
     font-size: 14px;
   }
-
-  .under-pickup {
-    min-width: 100%;
+  .main-under .h3 {
+    font-size: 24px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
   }
-  .under-pickup .pu-wrapper {
-    padding: 0 15px;
+  .main-under .h3::before {
+    width: 40px;
+  }
+  .main-under .h4 {
+    font-size: 22px;
+    padding: 13px 20px 15px 25px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+  }
+  .main-under .h4::before {
+    width: 2px;
+    left: 10px;
+  }
+  .main-under .h5 {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+  }
+  .main-under .h6 {
+    font-size: 18px;
+    letter-spacing: 1.5;
   }
 }
 /* end screen-max:750px */
 /* end screen-max:640px */
+@media screen and (max-width: 560px) {
+  .under-pickup h4 {
+    padding: 6vw 0;
+  }
+  .under-pickup .pu-en {
+    font-size: 23vw;
+  }
+  .under-pickup .pu-jp {
+    letter-spacing: 2px;
+  }
+}
 /* end screen-max:560px */
 /* end screen-max:520px */
 /* end screen-max:475px */
+@media screen and (max-width: 425px) {
+  .main-under .h3 {
+    font-size: 22px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  }
+  .main-under .h3::before {
+    width: 40px;
+  }
+  .main-under .h4 {
+    font-size: 20px;
+    padding: 13px 15px 15px 23px;
+    letter-spacing: 1px;
+  }
+  .main-under .h5 {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  .main-under .h6 {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .under-pickup h4 {
+    padding: 6vw 0;
+  }
+  .under-pickup .pu-en {
+    font-size: 23vw;
+  }
+  .under-pickup .pu-jp {
+    line-height: 1.3;
+    font-size: 18px;
+  }
+
+  .under-stp2 {
+    padding: 15px;
+  }
+
+  .under-bd dl {
+    padding: 15px;
+  }
+
+  .under-pdf {
+    margin: 0 auto;
+    width: 300px;
+    max-width: 100%;
+  }
+  .under-pdf li {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+}
 /* end screen-max:425px */
 /* end screen-max:375px */
+@media screen and (max-width: 320px) {
+  .under-banner .ubanner-tt {
+    font-size: 17px;
+    letter-spacing: 0;
+  }
+
+  .under-lkbaner .under-lkbn {
+    font-size: 15px;
+    letter-spacing: 0;
+  }
+
+  .under-stp2 .step-tt {
+    font-size: 16px;
+  }
+}
 /* end screen-max:320px */
 /*============================= HACK CSS =============================*/
 /* IE */
