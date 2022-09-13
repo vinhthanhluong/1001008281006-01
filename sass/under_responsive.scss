@@ -219,6 +219,31 @@
         }
     }
 
+    .qa-list{
+        .qa-item{
+            margin-bottom: 30px;
+        }
+
+        dt{
+            p{
+                font-size: 16px;
+            }
+        }
+
+        dd{
+            p{
+                padding: 15px;
+            }
+        }
+        
+
+        .qa-a , .qa-q{
+            width: 60px;
+            height: 34px;
+            font-size: 18px;
+        }
+    }
+
 
     // ======================== content ========================
     .main-under{

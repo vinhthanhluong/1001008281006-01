@@ -584,7 +584,7 @@
   margin: -15px;
 }
 .under-pdf li {
-  width: calc(33.3333333333% - 30px);
+  width: calc(100% / 3 - 30px);
   margin: 15px;
 }
 .under-pdf img {
@@ -624,44 +624,92 @@
 }
 
 .qa-list .qa-item {
-  margin-bottom: 30px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
-  padding: 20px;
+  margin-bottom: 50px;
 }
 .qa-list .qa-item:last-child {
   margin-bottom: 0;
 }
 .qa-list dt {
-  min-height: 60px;
-  padding-left: 60px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  position: relative;
   display: flex;
-  align-items: center;
-  border-bottom: 1px #000 dashed;
+  align-items: flex-start;
+  margin-bottom: 15px;
 }
-.qa-list dt .qa-kt {
-  top: 5px;
-}
-.qa-list .qa-kt {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  line-height: 38px;
-  text-align: center;
-  background-color: orange;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.qa-list dt p {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  line-height: 1.4;
+  margin-top: 6px;
 }
 .qa-list dd {
-  position: relative;
-  padding-left: 60px;
-  min-height: 40px;
+  display: flex;
+  align-items: flex-start;
 }
-.qa-list dd .qa-kt {
-  top: 0;
+.qa-list dd p {
+  background-color: #e3eef7;
+  padding: 20px;
+  line-height: 1.4;
+  position: relative;
+  width: 100%;
+}
+.qa-list dd p::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 10px 8px 0;
+  border-color: transparent #e3eef7 transparent transparent;
+  transform: translateX(-100%);
+}
+.qa-list .qa-lk {
+  text-decoration: underline;
+  display: block;
+}
+.qa-list .qa-a,
+.qa-list .qa-q {
+  width: 80px;
+  height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-right: 20px;
+  padding: 3px 12px 5px;
+}
+.qa-list .qa-q {
+  background-color: #fff;
+  color: #2fa2de;
+  position: relative;
+  border: 2px solid #2fa2de;
+  line-height: 1 !important;
+  padding-top: 0;
+}
+.qa-list .qa-q::before, .qa-list .qa-q::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-color: #2fa2de;
+  border-style: solid;
+}
+.qa-list .qa-q::before {
+  top: -6px;
+  left: -6px;
+  border-width: 2px 0 0 2px;
+}
+.qa-list .qa-q::after {
+  bottom: -6px;
+  right: -6px;
+  border-width: 0 2px 2px 0;
+}
+.qa-list .qa-a {
+  background: linear-gradient(135deg, #0364b9 0%, #51b7ed 100%);
+  color: #fff;
 }
 
 .main-under .sec-wrapper {
