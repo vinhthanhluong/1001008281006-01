@@ -27,6 +27,28 @@
         margin: 0 0 20px;
     }
 
+    #topic-path {
+        padding: 0 0 20px;
+        li,
+        a {
+            font-size: 14px;
+        }
+        li {
+            &::after {
+                padding: 0 5px;
+                font-size: 12px;
+            }
+
+            &:first-child {
+                a {
+                    padding-bottom: 1px;
+                    margin-bottom: 3px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
     // ======================== table ========================
     .under-tbl {
         tr {
@@ -38,11 +60,11 @@
             }
         }
 
-        th{
+        th {
             padding: 15px;
         }
 
-        td{
+        td {
             padding: 15px;
         }
     }
@@ -66,26 +88,25 @@
 
     .tbl-scroll {
         overflow: auto;
-        table{
+        table {
             min-width: 720px;
-            &.tbl-price{
+            &.tbl-price {
                 min-width: 1200px;
             }
         }
-
     }
 
     // ======================== under style ========================
-    .under-frame{
+    .under-frame {
         padding: 30px 20px;
     }
 
-    .under-list{
+    .under-list {
         &.lst-num {
-            li{
+            li {
                 margin-bottom: 20px;
                 padding-left: 20px;
-                &::after{
+                &::after {
                     top: 2px;
                 }
             }
@@ -95,27 +116,27 @@
     .under-pickup {
         min-width: 100%;
         padding: 40px 0;
-        .pu-wrapper{
+        .pu-wrapper {
             padding: 0 15px;
         }
 
-        h4{
+        h4 {
             padding: 34px 0;
         }
 
-        .pu-en{
+        .pu-en {
             font-size: 130px;
         }
 
-        .pu-jp{
+        .pu-jp {
             font-size: 20px;
             letter-spacing: 3px;
         }
     }
 
-    .under-banner{
+    .under-banner {
         padding: 20px;
-        &::before{
+        &::before {
             top: 7px;
             left: 7px;
             width: 30px;
@@ -123,7 +144,7 @@
             border-width: 3px 0 0 3px;
         }
 
-        &::after{
+        &::after {
             right: 7px;
             bottom: 7px;
             width: 30px;
@@ -131,70 +152,70 @@
             border-width: 0 3px 3px 0;
         }
 
-        .ubanner-tt{
+        .ubanner-tt {
             font-size: 18px;
         }
     }
 
-    .under-clm{
+    .under-clm {
         flex-wrap: wrap;
-        dl{
+        dl {
             width: 100% !important;
-            &:nth-child(1n + 2){
+            &:nth-child(1n + 2) {
                 border-left: 1px solid #cccccc;
                 border-top: none;
             }
         }
 
-        dd{
+        dd {
             padding: 10px;
         }
     }
 
-    .under-lkbaner{
-        .under-lkbn{
+    .under-lkbaner {
+        .under-lkbn {
             padding: 20px 10px;
             font-size: 18px;
             letter-spacing: 1px;
         }
 
-        &.col2{
-            .under-lkbn{
+        &.col2 {
+            .under-lkbn {
                 width: 100%;
                 margin-bottom: 20px;
-                &:last-child{
+                &:last-child {
                     margin-bottom: 0;
                 }
             }
         }
     }
 
-    .under-anc{
-        li{
-            margin-bottom: 15px;
+    .under-anc {
+        li {
+            margin: 0 0 15px 0;
         }
 
-        a{
+        a {
             letter-spacing: 1px;
         }
     }
 
-    .under-stp2{
+    .under-stp2 {
         padding: 20px;
 
-        dl{
+        dl {
             margin-bottom: 15px;
         }
 
-        dt{
+        dt {
             margin-bottom: 5px;
         }
 
-        .step-tt{
+        .step-tt {
             line-height: 1.4;
             font-size: 18px;
             padding-left: 16px;
-            &::before{
+            &::before {
                 top: 11px;
                 width: 6px;
                 height: 6px;
@@ -202,68 +223,68 @@
         }
     }
 
-    .under-bd{
-        dl{
+    .under-bd {
+        dl {
             padding: 20px;
         }
     }
 
-    .under-pdf{
-        li{
+    .under-pdf {
+        li {
             width: calc(100% / 2 - 30px);
         }
 
-        a{
+        a {
             background-position: left 3px;
             padding-left: 20px;
         }
     }
 
-    .qa-list{
-        .qa-item{
+    .qa-list {
+        .qa-item {
             margin-bottom: 30px;
         }
 
-        dt{
-            p{
+        dt {
+            p {
                 font-size: 16px;
             }
         }
 
-        dd{
-            p{
+        dd {
+            p {
                 padding: 15px;
             }
         }
-        
 
-        .qa-a , .qa-q{
+        .qa-a,
+        .qa-q {
             width: 60px;
             height: 34px;
             font-size: 18px;
         }
     }
 
-
     // ======================== content ========================
-    .main-under{
+    .main-under {
         #content {
             padding: 30px 15px 50px;
             width: 100%;
         }
 
-        section , .section{
+        section,
+        .section {
             margin-bottom: 50px;
         }
 
-        .sech3{
+        .sech3 {
             width: 100%;
             min-width: 100%;
             position: static;
             transform: none;
             margin: 20px 0 50px;
 
-            .under-bx{
+            .under-bx {
                 margin-bottom: 30px;
             }
         }
@@ -272,15 +293,15 @@
             h4 {
                 margin-bottom: 20px;
             }
-    
-            .h5{
+
+            .h5 {
                 padding-bottom: 10px;
                 border-bottom: 1px solid #eaeaea;
                 display: block;
                 width: 100%;
-        
+
                 &::before {
-                    content: '';
+                    content: "";
                     position: absolute;
                     bottom: -1px;
                     right: 0;
@@ -289,10 +310,23 @@
                     background-color: $main-cl;
                 }
             }
-    
+
             .btn {
                 margin-top: 20px;
             }
+        }
+    }
+
+    .under-visual {
+        padding: 0;
+        height: 350px;
+        .h2-jp {
+            font-size: 26px;
+            letter-spacing: 1px;
+        }
+
+        .h2-en {
+            letter-spacing: 2px;
         }
     }
 
@@ -308,40 +342,38 @@
             font-size: 14px;
         }
 
-        .h3{
+        .h3 {
             font-size: 24px;
             padding-bottom: 10px;
             margin-bottom: 20px;
             letter-spacing: 2px;
-            &::before{
+            &::before {
                 width: 40px;
             }
         }
 
-        .h4{
+        .h4 {
             font-size: 22px;
             padding: 13px 20px 15px 25px;
             letter-spacing: 1.5px;
             margin-bottom: 20px;
-            &::before{
+            &::before {
                 width: 2px;
                 left: 10px;
             }
         }
 
-        .h5{
+        .h5 {
             font-size: 20px;
             letter-spacing: 1.5px;
             margin-bottom: 20px;
         }
 
-        .h6{
+        .h6 {
             font-size: 18px;
             letter-spacing: 1.5;
         }
     }
-
-   
 }
 
 /* end screen-max:750px */
@@ -353,15 +385,15 @@
 
 @include max-media(560px) {
     .under-pickup {
-        h4{
+        h4 {
             padding: 6vw 0;
         }
 
-        .pu-en{
+        .pu-en {
             font-size: 23vw;
         }
 
-        .pu-jp{
+        .pu-jp {
             letter-spacing: 2px;
         }
     }
@@ -380,68 +412,82 @@
 /* end screen-max:475px */
 
 @include max-media(425px) {
-    .main-under{
-        .h3{
+    .under-visual {
+        height: 300px;
+        .h2-jp {
+            font-size: 24px;
+        }
+    }
+    .main-under {
+        .h3 {
             font-size: 22px;
             padding-bottom: 10px;
             margin-bottom: 20px;
             letter-spacing: 2px;
-            &::before{
+            &::before {
                 width: 40px;
             }
         }
 
-        .h4{
+        .h4 {
             font-size: 20px;
             padding: 13px 15px 15px 23px;
             letter-spacing: 1px;
         }
 
-        .h5{
+        .h5 {
             font-size: 18px;
             letter-spacing: 1px;
         }
 
-        .h6{
+        .h6 {
             font-size: 16px;
             letter-spacing: 1px;
         }
     }
     .under-pickup {
-        h4{
+        h4 {
             padding: 6vw 0;
         }
 
-        .pu-en{
+        .pu-en {
             font-size: 23vw;
         }
 
-        .pu-jp{
+        .pu-jp {
             line-height: 1.3;
             font-size: 18px;
         }
     }
 
-    .under-stp2{
+    .under-stp2 {
         padding: 15px;
     }
 
-    .under-bd{
-        dl{
+    .under-bd {
+        dl {
             padding: 15px;
         }
     }
 
-    .under-pdf{
+    .under-pdf {
         margin: 0 auto;
         width: 300px;
         max-width: 100%;
-        li{
+        li {
             width: 100%;
             margin: 0 0 20px;
         }
     }
-    
+
+    .under-anc {
+        a {
+            padding: 17px 10px;
+            &::after {
+                border-width: 0 22px 22px 0;
+            }
+        }
+    }
 }
 
 /* end screen-max:425px */
@@ -452,22 +498,22 @@
 /* end screen-max:375px */
 
 @include max-media(320px) {
-    .under-banner{
-        .ubanner-tt{
+    .under-banner {
+        .ubanner-tt {
             font-size: 17px;
             letter-spacing: 0;
         }
     }
 
-    .under-lkbaner{
-        .under-lkbn{
+    .under-lkbaner {
+        .under-lkbn {
             font-size: 15px;
             letter-spacing: 0;
         }
     }
 
-    .under-stp2{
-        .step-tt{
+    .under-stp2 {
+        .step-tt {
             font-size: 16px;
         }
     }

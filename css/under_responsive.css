@@ -13,6 +13,23 @@
     margin: 0 0 20px;
   }
 
+  #topic-path {
+    padding: 0 0 20px;
+  }
+  #topic-path li,
+#topic-path a {
+    font-size: 14px;
+  }
+  #topic-path li::after {
+    padding: 0 5px;
+    font-size: 12px;
+  }
+  #topic-path li:first-child a {
+    padding-bottom: 1px;
+    margin-bottom: 3px;
+    display: inline-block;
+  }
+
   .under-tbl tr th + td {
     border-top: none;
   }
@@ -132,7 +149,7 @@
   }
 
   .under-anc li {
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
   }
   .under-anc a {
     letter-spacing: 1px;
@@ -163,7 +180,7 @@
   }
 
   .under-pdf li {
-    width: calc(100% / 2 - 30px);
+    width: calc(50% - 30px);
   }
   .under-pdf a {
     background-position: left 3px;
@@ -179,7 +196,8 @@
   .qa-list dd p {
     padding: 15px;
   }
-  .qa-list .qa-a, .qa-list .qa-q {
+  .qa-list .qa-a,
+.qa-list .qa-q {
     width: 60px;
     height: 34px;
     font-size: 18px;
@@ -189,7 +207,8 @@
     padding: 30px 15px 50px;
     width: 100%;
   }
-  .main-under section, .main-under .section {
+  .main-under section,
+.main-under .section {
     margin-bottom: 50px;
   }
   .main-under .sech3 {
@@ -222,6 +241,18 @@
   }
   .main-under .sec-h .btn {
     margin-top: 20px;
+  }
+
+  .under-visual {
+    padding: 0;
+    height: 350px;
+  }
+  .under-visual .h2-jp {
+    font-size: 26px;
+    letter-spacing: 1px;
+  }
+  .under-visual .h2-en {
+    letter-spacing: 2px;
   }
 
   .main-under p,
@@ -280,6 +311,13 @@
 /* end screen-max:520px */
 /* end screen-max:475px */
 @media screen and (max-width: 425px) {
+  .under-visual {
+    height: 300px;
+  }
+  .under-visual .h2-jp {
+    font-size: 24px;
+  }
+
   .main-under .h3 {
     font-size: 22px;
     padding-bottom: 10px;
@@ -330,6 +368,13 @@
   .under-pdf li {
     width: 100%;
     margin: 0 0 20px;
+  }
+
+  .under-anc a {
+    padding: 17px 10px;
+  }
+  .under-anc a::after {
+    border-width: 0 22px 22px 0;
   }
 }
 /* end screen-max:425px */

@@ -21,11 +21,11 @@
     justify-content: center;
     flex-wrap: wrap;
 
-    li{
+    li {
         width: 30%;
         margin: 10px;
 
-        a{
+        a {
             position: relative;
             overflow: hidden;
             display: flex;
@@ -42,26 +42,142 @@
             transition: all 0.3s ease;
             font-size: 20px;
 
-            &:hover{
+            &:hover {
                 color: #fff;
                 background-color: $main-cl;
             }
         }
     }
 
-    .prevPage{
+    .prevPage {
         position: absolute;
         top: 0;
         left: 0;
     }
-    .nextPage{
+    .nextPage {
         position: absolute;
         top: 0;
         right: 0;
     }
 }
 
-@include max-media(750px){
+.overnote {
+    position: relative;
+    max-width: 850px;
+    margin: 0 auto;
+    .ovn-head {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 30px;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: $main-cl3;
+            width: 100%;
+            height: 2px;
+        }
+        li {
+            width: 200px;
+            height: 60px;
+            border: 2px $main-cl3 solid;
+            border-bottom: none;
+            margin-right: 10px;
+            position: relative;
+            z-index: 1;
+            transition: all 0.5s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            background-color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: $main-cl3;
+            font-size: 18px;
+            cursor: pointer;
+            &:hover {
+                background-color: $main-cl3;
+                color: #fff;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.active {
+                background-color: $main-cl3;
+                color: #fff;
+            }
+        }
+    }
+
+    .ovn-box {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+
+    .ovn-item {
+        margin-bottom: 20px;
+        display: flex;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .ovn-time {
+        line-height: 1.4;
+        margin: 0 40px 0 0;
+        width: 100px;
+        font-weight: bold;
+        font-family: $roboto;
+        letter-spacing: 1px;
+        padding-top: 3px;
+    }
+
+    .ovn-tt {
+        width: calc(100% - 140px);
+        a {
+            text-decoration: underline;
+        }
+    }
+
+    .ovn-inner {
+        padding: 0 10px;
+    }
+}
+
+.overnote-detail{
+    .detail-box{
+        margin-bottom: 50px;
+        text-align: center;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    .detail-img{
+        line-height: 0;
+        position: relative;
+        width: 600px;
+        height: 370px;
+        background-color: #f3f3f3;
+        margin: 0 auto 20px;
+        max-width: 100%;
+        img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            max-height: 100%;
+        }
+    }
+}
+
+@include max-media(750px) {
     .btn_prev_next {
         flex-direction: column;
         align-items: center;
@@ -74,6 +190,65 @@
                 padding: 10px 20px;
                 font-size: 16px;
             }
+        }
+    }
+
+    .overnote {
+        .ovn-head {
+            margin-bottom: 15px;
+            &::before {
+                height: 1px;
+            }
+            li {
+                font-size: 14px;
+                height: 55px;
+                margin-right: 5px;
+                border-width: 1px;
+            }
+        }
+
+        .ovn-inner{
+            padding: 0;
+        }
+
+        .ovn-item {
+            flex-wrap: wrap;
+        }
+
+        .ovn-time{
+            margin: 0 0 7px 0;
+            width: 100%;
+        }
+
+        .ovn-tt{
+            width: 100%;
+            line-height: 1.5;
+        }
+        
+    }
+
+    .overnote-detail{
+        .detail-img{
+            width: 400px;
+            height: 260px;
+        }
+    }
+}
+
+@include max-media(425px) {
+    .overnote {
+        .ovn-head {
+            li {
+                height: 50px;
+            }
+        }
+    }
+
+    
+    .overnote-detail{
+        .detail-img{
+            width: 345px;
+            height: 230px;
         }
     }
 }

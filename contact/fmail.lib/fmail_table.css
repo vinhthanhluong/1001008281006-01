@@ -1,0 +1,78 @@
+﻿@charset "UTF-8";
+
+/* 枠無し */
+table.mailform {
+	width: 100%;
+	padding: 10px;
+}
+table.mailform tr th {
+	width: 300px;
+	/* padding: 10px 15px; */
+	/* border-bottom: solid 1px #ebebeb; */
+	text-align: left;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #f8f8f8;
+	color: #333;
+}
+table.mailform tr td {
+	/* padding: 10px 15px; */
+	/* border-bottom: solid 1px #ebebeb; */
+	font-size: 14px;
+}
+
+table.mailform tr th,
+table.mailform tr td {
+	border: solid 1px #ebebeb;
+	padding: 15px 20px;
+}
+
+table.mailform tr td ul li,table.mailform tr td ul,table.mailform tr td ol,table.mailform tr td ol li {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+th.fmail_error_line,td.fmail_error_line,.fmail_error {
+	background-color: #FFEEEE;
+	color: #FF0000;
+}
+
+
+/* 枠あり */
+table.mailform {
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+/* position系が来るとテーブルが切れるので、装飾削除用にする */
+table.mailform tr.table_disable th,
+table.mailform tr.table_disable td {
+	border: 0;
+	background: none;
+}
+
+
+
+/* レスポンシブの設定 */
+@media screen and (max-width: 750px) {
+	table.mailform {
+		padding: 0;
+		border-collapse: separate;
+	}
+	table.mailform tr th,
+	table.mailform tr td {
+		display: block;
+		padding: 10px;
+		width: 100%;
+		font-size: 16px;
+		border-bottom: none;
+	}
+	table.mailform tr td {
+		padding: 15px 10px;
+	}
+
+	table.mailform tr:last-child td {
+		border-bottom: 1px solid #ebebeb;
+	}
+}

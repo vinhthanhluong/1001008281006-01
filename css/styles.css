@@ -808,6 +808,8 @@ img {
   text-transform: uppercase;
   border-bottom: 1px solid #2fa2de;
   padding-bottom: 5px;
+  margin-bottom: 2px;
+  display: inline-block;
 }
 #topic-path li:last-child::after {
   display: none;
@@ -818,6 +820,10 @@ img {
 
 .main-cl {
   color: #2fa2de;
+}
+
+.red-cl {
+  color: #ff0000;
 }
 
 .sp375, .sp425 {
@@ -1251,8 +1257,8 @@ img {
 }
 .drainage-pipe .pige-bxig {
   display: flex;
-  width: calc(((1920px - 1500px) / 2) + 100%);
-  margin-left: calc((1920px - 1500px) / -2);
+  width: calc(210px + 100%);
+  margin-left: -210px;
   column-gap: 10px;
 }
 .drainage-pipe .pipe-img {
@@ -1816,8 +1822,8 @@ img {
   width: 50%;
 }
 .professional .profess-img {
-  margin-left: calc((1920px - 1200px) / -2);
-  width: calc((1920px - 1200px) / 2 + 100%);
+  margin-left: -360px;
+  width: calc(360px + 100%);
   clip-path: polygon(0 0, 100% 0%, 85.2% 100%, 0% 100%);
 }
 .professional .profess-list {
@@ -1830,7 +1836,7 @@ img {
   z-index: 1;
 }
 .professional .profess-list li {
-  width: calc(100% / 3);
+  width: 33.3333333333%;
   text-align: center;
   border-right: 1px solid #ebebeb;
   padding-bottom: 20px;
@@ -2191,7 +2197,7 @@ img {
 }
 .endoscope .scope-ltm {
   background: #f1f1f1 url("../images/scope-img01.png") bottom right no-repeat;
-  padding-left: calc((1920px - 1500px) / 2);
+  padding-left: 210px;
 }
 .endoscope .scope-ltm::before {
   content: "before";
@@ -2202,7 +2208,7 @@ img {
 .endoscope .scope-rtm {
   width: 50%;
   background: #2fa2de url("../images/scope-img02.png") bottom right no-repeat;
-  padding-right: calc((1920px - 1429px) / 2);
+  padding-right: 245.5px;
   justify-content: flex-end;
   color: #fff;
 }
@@ -2411,7 +2417,7 @@ img {
   left: 0;
 }
 .report .rpt-bx1 .report-tt {
-  margin-left: calc((1900px - 1200px) / 2);
+  margin-left: 350px;
   letter-spacing: 3.5px;
   width: 520px;
 }
@@ -2437,7 +2443,7 @@ img {
   right: 0;
 }
 .report .rpt-bx2 .report-tt {
-  margin-right: calc((1900px - 1200px) / 2);
+  margin-right: 350px;
   margin-left: auto;
   letter-spacing: 3px;
   width: 490px;
